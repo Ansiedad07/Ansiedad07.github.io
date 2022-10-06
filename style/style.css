@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+
+body {
+    font-family: 'Fira Code';
+    font-weight: bolder;
+    cursor: default;
+    margin: 0px;
+    padding: 0px;
+}
+
+::selection {
+    color: rgb(255, 255, 255);
+    background: rgb(45, 45, 45);
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    padding: 70px;
+    text-align: center;
+    background-color: #65B0BB;
+    user-select: none;
+    font-size: 20px;
+}
+
+.navbar {
+    padding: 10px;
+    background-color: aquamarine;
+    text-align: center;
+    overflow: hidden;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover {
+    color: palevioletred;
+    text-decoration: none;
+}
+
+
+.upbutton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(32, 192, 190);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 500px;
+    font-size: 18px;
+}
+
+.blogs {
+    position: absolute;
+    left: 100px;
+    font-family: 'Fira Code';
+    white-space: pre-wrap;
+    color:rgb(32, 192, 190);
+}
+
+.blogs a {
+    text-decoration: none;
+    color: black;
+}
+
+.blogs a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.blogs a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.blogs a:hover {
+    color: palevioletred;
+    text-decoration: none;
+}

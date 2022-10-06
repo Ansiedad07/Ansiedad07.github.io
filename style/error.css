@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+
+body {
+    font-family: "Fira Code";
+}
+
+.error {
+    text-align: center;
+    background-color: rgba(189, 189, 189, 0.605);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: palevioletred;
+}
+
+::selection {
+    color: white;
+    background-color: black;
+}
