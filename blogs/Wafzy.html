@@ -1,92 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:title" content="Wafzy Bot :D">
-  <meta property="og:url" content="https://ansiedad07.github.io/blogs/bots">
-  <meta property="og:type" content="website">
-  <meta property="og:description" content="Mi bot wafzy">
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" href="../assets/bots.png">
-  <title>Wafzy</title>
-  <script src="../code/script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp"/>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid container">
+    <div id="progressbar"></div>
+    <section>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="../images/logo.png">
+                    <h2><span class="primary">IZI</span><span class="success"> BOT</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-sharp">close</span>
+                </div>
+            </div>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href=".././index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Wafzy.html">Wafzy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/commands.html">Comandos</a>
-          </li>
-        </ul>
-      </div>
+            <div class="sidebar">
+                <a href="../pages/dashboard.html">
+                    <span class="material-symbols-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-symbols-sharp">home</span>
+                    <h3>Inicio</h3>
+                </a>
+                <a href="../pages/comandos.html">
+                    <span class="material-symbols-sharp">receipt_long</span>
+                    <h3>Comandos</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">insights</span>
+                    <h3>Servidores</h3>
+                </a>
+                <a href="../pages/tos.html">
+                    <span class="material-symbols-sharp">inventory</span>
+                    <h3>Terminos de servicio</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">report</span>
+                    <h3>Reportes</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <main>
+            <h1>Inicio</h1>
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-symbols-sharp">smart_toy</span>
+                    <div class="middle">
+                        <div class="lef">
+                            <h1>Bot multi funcion</h1>
+                        </div>
+                        <div class="progress">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="expenses">
+                    <span class="material-symbols-sharp">settings</span>
+                    <div class="middle">
+                        <div class="lef">
+                            <h1>Facil de usar</h1>
+                        </div>
+                        <div class="progress">
+                            <!-- <svg>
+                                <circle cx="38" cy="38"
+                                r="38"></circle>
+                            </svg> -->
+                            <!-- <div class="number">
+                                <p>44%</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="income">
+                    <span class="material-symbols-sharp">lock</span>
+                    <div class="middle">
+                        <div class="lef">
+                            <h1>Tu información esta segura<h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recent-orders">
+                <h1><span class="primary">IZI</span><span class="success"> BOT</span></h1>
+                <p style="color: white;"></p>
+                <li>Quien soy?</li>
+                <li>Hola Soy IZI BOT y estoy diseñado para serte de utilidad</li>
+                <li>Soy facil de usar y configurar tu servidor de forma facil</li>
+                <li>Estoy completamente en español</li>
+                <li>Cuento con 280 comandos</li>
+                <li>Puedes cambiar mi idioma</li>
+                <br>
+                <br>
+                <li>Iniciemos nuestra historia <a href="../pages/dashboard.html">Mas información</a></li>
+        </main>
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-symbols-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-symbols-sharp">light_mode</span>
+                    <span class="material-symbols-sharp active">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Inicio, <b>IZI BOT</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </nav>
-  </div>
+    </section>
 
-  <div class="jumbotron text-center bg-transparent">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop(),
+            dh = $(document).height(),
+            wh = $(window).height();
+            scrollPercent = (scroll / (dh-wh)) * 100;
+            $('#progressbar').css('height', scrollPercent + '%');
+        })
+    </script>
 
-    <h1 class="display-3 htext">Wafzy#5216</h1>
-    <img class="navbar-brand" href="/">
-    <img src="../assets/bot.png" alt="" width="50" height="50" class="rounded-circle" title="Wafzy"> &nbsp;
-  </img>
-    <a class="btn btn-dark" href="https://discord.com/api/oauth2/authorize?client_id=923455561113145375&permissions=8&scope=bot%20applications.commands">Invitar</a>
-    &nbsp;
-    <a class="btn btn-dark" href="https://discord.gg/GuvGE64MzJ">Servidor de soporte</a>
-  </div>
-
-  <div class="bg-dark">
-
-    <div class="card-columns cardds">
-      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-        <div class="card-header text-center">    <img class="navbar-brand" href="/">
-          <img src="../assets/bot.png" alt="" width="50" height="50" class="rounded-circle"> &nbsp;
-        </img>Wafzy</div>
-        <div class="card-body">
-          <p class="card-text">Wafzy es un bot que esta echo para serte de mucha utilidad y ayudarte en todo momento desarrollado por Ansiedad#4889</p>
-        </div>
-      </div>
-
-      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-        <div class="card-header text-center">    <img class="navbar-brand" href="/">
-        </img>Comandos</div>
-        <div class="card-body">
-          <p class="card-text">Wafzy contiene mas de 300 comandos, de todo tipo y esta en constante mentenimiento para ser el mejor bot</p>
-        </div>
-      </div>
-      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-        <div class="card-header text-center">    <img class="navbar-brand" href="/">
-        </img>Como funciona</div>
-        <div class="card-body">
-          <p class="card-text">Wafzy esta hecho principalmente para hacer de todo y usarlo con gran facilidad, esperamos que le sea muy util en su servidor!</p>
-        </div>
-      </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="../js/orders.js"></script>
+    <script src="../js/index.js"></script>
 </body>
-
-
 </html>
