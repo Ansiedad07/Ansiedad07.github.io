@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp"/>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="progressbar"></div>
+    <section>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="../images/logo.png">
+                    <h2><span class="primary">IZI</span><span class="success"> BOT</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="../pages/dashboard.html" class="active">
+                    <span class="material-symbols-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="../blogs/Wafzy.html">
+                    <span class="material-symbols-sharp">home</span>
+                    <h3>Inicio</h3>
+                </a>
+                <a href="../pages/comandos.html">
+                    <span class="material-symbols-sharp">receipt_long</span>
+                    <h3>Comandos</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">insights</span>
+                    <h3>Servidores</h3>
+                </a>
+                <!-- <a href="#">
+                    <span class="material-symbols-sharp">mail</span>
+                    <h3>Messages</h3>
+                    <span class="message-count">26</span>
+                </a> -->
+                <a href="../pages/tos.html">
+                    <span class="material-symbols-sharp">inventory</span>
+                    <h3>Terminos de servicio</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">report</span>
+                    <h3>Reportes</h3>
+                </a>
+                <!-- <a href="#">
+                    <span class="material-symbols-sharp">settings</span>
+                    <h3>Settings</h3>
+                </a> -->
+                <!-- <a href="#">
+                    <span class="material-symbols-sharp">add</span>
+                    <h3>Add Product</h3>
+                </a> -->
+                <a href="#">
+                    <span class="material-symbols-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-symbols-sharp">person</span>
+                    <div class="middle">
+                        <div class="lef">
+                            <h3>Usuarios</h3>
+                            <h1>4355</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38"
+                                r="38"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>4355</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <div class="expenses">
+                    <span class="material-symbols-sharp">bar_chart</span>
+                    <div class="middle">
+                        <div class="lef">
+                            <h3>Servidores</h3>
+                            <h1>23</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38"
+                                r="38"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>23</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <div class="income">
+                    <span class="material-symbols-sharp">computer</span>
+                    <div class="middle">
+                        <div class="lef">
+                            <h3>Comandos</h3>
+                            <h1>280</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38"
+                                r="38"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>280</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recent-orders">
+                <h2>Ultimas updates</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Actualización</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-symbols-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-symbols-sharp">light_mode</span>
+                    <span class="material-symbols-sharp active">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hola Soy, <b>IZI BOT</b></p>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="../images/logo.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-updates">
+                <h2>Beta testers</h2>
+                <div class="updates">
+                    <div class="update">
+                    <div class="profile-photo">
+                        <img src="../images/yesua.png">
+                    </div>
+                    <div class="message">
+                        <p><b>Yesua</b> Ta buenardo :v</p>
+                        <small class="text-muted">23/01/2023</small>
+                    </div>
+                </div>
+                <div class="update">
+                    <div class="profile-photo">
+                        <img src="../images/akira.jpg">
+                    </div>
+                    <div class="message">
+                        <p><b>Akira</b> Le doy 4/5 estrellas por que el bot esta algo lento</p>
+                        <small class="text-muted">23/01/2023</small>
+                    </div>
+                </div>
+                <div class="update">
+                    <div class="profile-photo">
+                        <img src="../images/profile-4.jpg">
+                    </div>
+                    <div class="message">
+                        <p><b>Mike Tyson</b> Es un increible bot de lo mejor</p>
+                        <small class="text-muted">2022/10/10</small>
+                    </div>
+                </div>
+            </div>
+            <div class="sales-analytics">
+                <h2>Sociales</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <ion-icon name="logo-discord"></ion-icon>
+                    </div>
+                    <div class="right">
+                        <div class="ingo">
+                            <h3>Discord</h3>
+                            <a class="text-muted" href="https://discord.gg/GuvGE64MzJ">Soporte y ayuda con tu bot</a>
+                            <!-- <small class="text-muted">Soporte y ayuda con tu bot</small> -->
+                        </div>
+                        <h5 class="success">+124</h5>
+                        <h3>Usuarios</h3>
+                    </div>
+                </div>
+                <div class="item offline">
+                    <div class="icon">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </div>
+                    <div class="right">
+                        <div class="ingo">
+                            <h3>YouTube</h3>
+                            <a class="text-muted" href="https://www.youtube.com/channel/UCzcOnHXoKLC5GRE_YViaBZQ">Canal de YouTube del creador</a>
+                        </div>
+                        <h5 class="success">+34</h5>
+                        <h3>Subs</h3>
+                    </div>
+                </div>
+                <div class="item customers">
+                    <div class="icon">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                    <div class="right">
+                        <div class="ingo">
+                            <h3>Github</h3>
+                            <a class="text-muted" href="https://github.com/Ansiedad07/">Github del creador</a>
+                        </div>
+                        <h5 class="success">+1</h5>
+                        <h3>Seguidor</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <span class="material-symbols-sharp">add</span>
+                        <a href="https://discord.com/api/oauth2/authorize?client_id=923455561113145375&permissions=8&scope=bot%20applications.commands">Añadir al servidor</a>
+                        <!-- <h3>Añadir al servidor</h3> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop(),
+            dh = $(document).height(),
+            wh = $(window).height();
+            scrollPercent = (scroll / (dh-wh)) * 100;
+            $('#progressbar').css('height', scrollPercent + '%');
+        })
+    </script>
+
+    <script src="../js/orders.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>
