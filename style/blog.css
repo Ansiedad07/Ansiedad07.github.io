@@ -4,10 +4,7 @@ body {
     font-family: 'Fira Code';
 }
 
-::selection {
-    color: white;
-    background: rgb(45, 45, 45);
-}
+
 
 .title {
     padding: 50px;
