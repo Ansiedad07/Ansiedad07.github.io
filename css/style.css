@@ -297,6 +297,15 @@ body {
   transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s;
 }
 
+a {
+    color: rgb(255, 208, 208);
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 10px rgba(255, 208, 208, 0.56);
+    transition: text-shadow 0.3s;
+}
 
 @media (max-width:600px) {
   .navbar ul {
