@@ -6,6 +6,7 @@ body {
     cursor: default;
     margin: 0px;
     padding: 0px;
+    background: #1c171e;
 }
 
 ::selection {
@@ -13,33 +14,159 @@ body {
     background: rgb(45, 45, 45);
 }
 
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../img/JavaScript.jpg");
+
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 2vh;
+
+    padding: 25vh;
+    padding-left: 5%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 1px #00000060;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text h1 {
+    margin: 0px;
+    font-size: 60px;
+}
+
+.hero-text p {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+.hero-text button {
+    border: 2px solid rgb(255, 109, 236);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(255, 109, 236, 0.188);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    box-shadow: 0 0 10px 1px #ff74e8ae;
+    transform: scale(1.05) perspective(1px);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
 .header {
     margin: 0;
     padding: 0;
     padding: 70px;
     text-align: center;
-    background-color: #65B0BB;
+    background-color: #1c171e;
     user-select: none;
     font-size: 20px;
 }
 
+.banner {
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../img/paisaje.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 12px;
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px 1px #00000060;
+}
+
+.banner h1 {
+    text-shadow: 0 0 10px 1px black;
+}
+.banner p {
+    color: white;
+}
+
+.banner a {
+    color: rgb(255, 208, 208);
+    text-decoration: none;
+}
+
+.banner a:hover {
+    text-shadow: 0 0 10px rgba(255, 208, 208, 0.56);
+    transition: text-shadow 0.3s;
+}
+.button {
+    padding: 15px;
+    background-color: rgb(78, 78, 255);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px rgba(100, 100, 255, 0.555);
+    transform: scale(1.05) perspective(1px);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.button-green {
+    padding: 15px;
+    background-color: rgb(108, 255, 140);
+    color: black;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.button-green:hover {
+    box-shadow: 0 0 10px rgba(100, 255, 126, 0.555);
+    transform: scale(1.05) perspective(1px);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+h1,
+p {
+    color: rgb(255, 208, 208);
+    text-decoration: none;
+}
+
 .navbar {
     padding: 10px;
-    background-color: aquamarine;
+    background-color: #1c171e;
     text-align: center;
     overflow: hidden;
 }
 
 .navbar a {
+    color: rgb(255, 208, 208);
     text-decoration: none;
-    color: black;
 }
 
 .navbar a:hover {
-    color: palevioletred;
-    text-decoration: none;
+    text-shadow: 0 0 10px rgba(255, 208, 208, 0.56);
+    transition: text-shadow 0.3s;
 }
-
 
 .upbutton {
     display: none;
@@ -49,12 +176,17 @@ body {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: rgb(32, 192, 190);
+    background-color: rgb(78, 78, 255);
     color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 500px;
     font-size: 18px;
+}
+.upbutton:hover {
+    box-shadow: 0 0 10px rgba(100, 100, 255, 0.555);
+    transform: scale(1.05) perspective(1px);
+    transition: box-shadow 0.3s, transform 0.3s;
 }
 
 .blogs {
@@ -62,25 +194,67 @@ body {
     left: 100px;
     font-family: 'Fira Code';
     white-space: pre-wrap;
-    color:rgb(32, 192, 190);
+    color: rgb(32, 192, 190);
+
+    /* display: flex; */
+    /* border: 1px solid rgba(0, 0, 0, 0.25); */
+    border-radius: 20px;
+
+    /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.223); */
+    margin: 12px;
+    margin-top: auto;
+    padding: 5px;
+    /* background-color: #212325; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.blogs p {
+    color: white;
 }
 
 .blogs a {
-    text-decoration: none;
-    color: black;
-}
-
-.blogs a:active {
-    color: black;
-    text-decoration: none;
-}
-
-.blogs a:visited {
-    color: black;
+    color: rgb(255, 208, 208);
     text-decoration: none;
 }
 
 .blogs a:hover {
-    color: palevioletred;
+    text-shadow: 0 0 10px rgba(255, 208, 208, 0.56);
+    transition: text-shadow 0.3s;
+}
+
+.footer {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.223);
+    margin: 12px;
+    margin-top: auto;
+    padding: 5px;
+    /* background-color: #212325; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer p {
+    color: white;
+}
+
+.footer a {
+    color: rgb(255, 208, 208);
     text-decoration: none;
+}
+
+.footer a:hover {
+    text-shadow: 0 0 10px rgba(255, 208, 208, 0.56);
+    transition: text-shadow 0.3s;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    color: #1c171e;
+    background-color: #1c171e;
+    border-radius: 10px;
 }
