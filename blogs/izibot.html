@@ -1,145 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp"/>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <div id="progressbar"></div>
-    <section>
-    <div class="container">
-        <aside>
-            <div class="top">
-                <div class="logo">
-                    <img src="../images/logo.png">
-                    <h2><span class="primary">IZI</span><span class="success"> BOT</span></h2>
-                </div>
-                <div class="close" id="close-btn">
-                    <span class="material-symbols-sharp">close</span>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IziBot</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta
+      name="description"
+      content="IziBot es un bot multifuncional de discord, para moderacion, reaccion, nsfw y mucho mas!"
+    />
+    <link
+      rel="shortcut icon"
+      href="../img/iziLike.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h3>IziBot</h3>
+        <ul>
+          <li><a href="#">Comandos</a></li>
+          <li><a href="https://discord.gg/sRbsCKTpDU">Soporte</a></li>
+          <li><a href="https://discord.com/api/oauth2/authorize?client_id=972320050537168906&permissions=8&scope=bot">Invitar</a></li>
+        </ul>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </nav>
+    </header>
 
-            <div class="sidebar">
-                <a href="../pages/dashboard.html">
-                    <span class="material-symbols-sharp">grid_view</span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#" class="active">
-                    <span class="material-symbols-sharp">home</span>
-                    <h3>Inicio</h3>
-                </a>
-                <a href="../pages/comandos.html">
-                    <span class="material-symbols-sharp">receipt_long</span>
-                    <h3>Comandos</h3>
-                </a>
-                <a href="#">
-                    <span class="material-symbols-sharp">insights</span>
-                    <h3>Servidores</h3>
-                </a>
-                <a href="../pages/tos.html">
-                    <span class="material-symbols-sharp">inventory</span>
-                    <h3>Terminos de servicio</h3>
-                </a>
-                <a href="#">
-                    <span class="material-symbols-sharp">report</span>
-                    <h3>Reportes</h3>
-                </a>
-                <a href="#">
-                    <span class="material-symbols-sharp">logout</span>
-                    <h3>Logout</h3>
-                </a>
-            </div>
-        </aside>
-        <main>
-            <h1>Inicio</h1>
-            <div class="insights">
-                <div class="sales">
-                    <span class="material-symbols-sharp">smart_toy</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h1>Bot multi funcion</h1>
-                        </div>
-                        <div class="progress">
+    <nav class="mobile-nav">
+      <a href="#">Comandos</a>
+      <a href="https://discord.gg/sRbsCKTpDU">Soporte</a>
+      <a href="https://discord.com/api/oauth2/authorize?client_id=972320050537168906&permissions=8&scope=bot">Invitar</a>
+    </nav>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="expenses">
-                    <span class="material-symbols-sharp">settings</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h1>Facil de usar</h1>
-                        </div>
-                        <div class="progress">
-                            <!-- <svg>
-                                <circle cx="38" cy="38"
-                                r="38"></circle>
-                            </svg> -->
-                            <!-- <div class="number">
-                                <p>44%</p>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="income">
-                    <span class="material-symbols-sharp">lock</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h1>Tu información esta segura<h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="recent-orders">
-                <h1><span class="primary">IZI</span><span class="success"> BOT</span></h1>
-                <p style="color: white;"></p>
-                <li>Quien soy?</li>
-                <li>Hola Soy IZI BOT y estoy diseñado para serte de utilidad</li>
-                <li>Soy facil de usar y configurar tu servidor de forma facil</li>
-                <li>Estoy completamente en español</li>
-                <li>Cuento con 280 comandos</li>
-                <li>Puedes cambiar mi idioma</li>
-                <br>
-                <br>
-                <li>Iniciemos nuestra historia <a href="../pages/dashboard.html">Mas información</a></li>
-                <p class="center" style="color: var(--text-color);">IZI BOT © 2021</p>
-        </main>
-
-        <div class="right">
-            <div class="top">
-                <button id="menu-btn">
-                    <span class="material-symbols-sharp">menu</span>
-                </button>
-                <div class="theme-toggler">
-                    <span class="material-symbols-sharp">light_mode</span>
-                    <span class="material-symbols-sharp active">dark_mode</span>
-                </div>
-                <div class="profile">
-                    <div class="info">
-                        <p>Inicio, <b>IZI BOT</b></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>IziBot</h1>
+        <p>
+            IziBot es un bot multifuncional, para moderacion, musica, reaccion, nsfw y mas!..
+        </p>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=972320050537168906&permissions=8&scope=bot"><button type="button">Agregar al servidor</button></a>
+      </div>
     </div>
-    </section>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript">
-        $(window).scroll(function(){
-            var scroll = $(window).scrollTop(),
-            dh = $(document).height(),
-            wh = $(window).height();
-            scrollPercent = (scroll / (dh-wh)) * 100;
-            $('#progressbar').css('height', scrollPercent + '%');
-        })
-    </script>
+    <div class="card-container">
+      <div class="card">
+        <h1>24/7</h1>
+        <p>
+          Violet es un bot que permite estar 24/7 para su uso.
+        </p>
+      </div>
+      <div class="card">
+        <h1>Actualizaciones</h1>
+        <p>
+          Violet se actualiza constantemente y mejora sus comandos tanto visualmente como funcionalidad
+        </p>
+      </div>
+      <div class="card">
+        <h1>Comandos Slash</h1>
+        <p>
+          Violet cuenta con comandos Slash y con comandos con el prefijo "v!" tambien se puede cambiar este prefijo
+        </p>
+      </div>
+      <div class="card">
+        <h1>Sistemas</h1>
+        <p>
+          Tenemos muchos sistemas en nuestro bot, por ejemplo, tickets, verificación y
+          ¡mucho mas!
+        </p>
+      </div>
+    </div>
 
-    <script src="../js/orders.js"></script>
-    <script src="../js/index.js"></script>
-</body>
+    <div class="banner">
+      <h1>Tienes alguna duda? Acude a nuestro servidor de discord!</h1>
+      <a href="#"><button class="button">Servidor Evergarden</button></a>
+      <a href="#"><button class="button-green">Lista de comandos</button></a>
+    </div>
+
+    <footer class="footer">
+      <p>Violet <a href="https://discord.gg/sRbsCKTpDU">Evergarden</a> 2022 | Hecho con 💖 by SNotWhox#7305</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
 </html>
