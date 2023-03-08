@@ -11,7 +11,8 @@ body {
 }
 
 .navbar {
-  background: url("../img/HD-wallpaper-anime-violet-evergarden-violet-evergarden-character.jpg");
+  background: rgb(213, 158, 252);
+  background: linear-gradient(148deg, rgba(213, 158, 252, 1) 0%, rgba(142, 157, 252, 1) 23%, rgba(135, 95, 253, 1) 50%, rgba(142, 157, 252, 1) 84%, rgba(213, 158, 252, 1) 100%);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -59,8 +60,7 @@ body {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/banner-arriba.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/paisaje.png");
 
   height: 50%;
   background-position: center;
@@ -141,7 +141,7 @@ body {
 .banner {
   height: auto;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/violet-banner.jpg");
+    url("https://raw.githubusercontent.com/LunarTaku/discord-web/main/img/bkgs.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -231,7 +231,9 @@ body {
   border: none;
 }
 
-.hamburger .bar, .hamburger:after, .hamburger:before {
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
   content: '';
   display: block;
   width: 100%;
@@ -298,13 +300,13 @@ body {
 }
 
 a {
-    color: rgb(255, 208, 208);
-    text-decoration: none;
+  color: rgb(255, 208, 208);
+  text-decoration: none;
 }
 
 a:hover {
-    text-shadow: 0 0 10px rgba(255, 208, 208, 0.56);
-    transition: text-shadow 0.3s;
+  text-shadow: 0 0 10px rgba(255, 208, 208, 0.56);
+  transition: text-shadow 0.3s;
 }
 
 @media (max-width:600px) {
@@ -317,4 +319,16 @@ a:hover {
   .hamburger {
     display: none;
   }
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  /* color: #1c171e; */
+  /* background-color: #1c171e; */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #413645;
+  border-radius: 5px;
 }
