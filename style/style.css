@@ -6,7 +6,8 @@ body {
     cursor: default;
     margin: 0px;
     padding: 0px;
-    background: #1c171e;
+    background: #1F1E2E;
+    /* background-image: url(''); */
 }
 
 ::selection {
@@ -16,7 +17,7 @@ body {
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../img/JavaScript.jpg");
+        url("../img/JavaScript.png");
 
     height: 50%;
     background-position: center;
@@ -85,7 +86,7 @@ body {
 .banner {
     height: auto;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../img/paisaje.png");
+        url("https://raw.githubusercontent.com/LunarTaku/discord-web/main/img/bkgs.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,6 +101,7 @@ body {
 .banner h1 {
     text-shadow: 0 0 10px 1px black;
 }
+
 .banner p {
     color: white;
 }
@@ -113,6 +115,7 @@ body {
     text-shadow: 0 0 10px rgba(255, 208, 208, 0.56);
     transition: text-shadow 0.3s;
 }
+
 .button {
     padding: 15px;
     background-color: rgb(78, 78, 255);
@@ -183,6 +186,7 @@ p {
     border-radius: 500px;
     font-size: 18px;
 }
+
 .upbutton:hover {
     box-shadow: 0 0 10px rgba(100, 100, 255, 0.555);
     transform: scale(1.05) perspective(1px);
@@ -234,6 +238,23 @@ p {
     margin-top: auto;
     padding: 5px;
     /* background-color: #212325; */
+    background: rgb(213, 158, 252);
+    background: linear-gradient(148deg, rgba(213, 158, 252, 1) 0%, rgba(142, 157, 252, 1) 23%, rgba(135, 95, 253, 1) 50%, rgba(142, 157, 252, 1) 84%, rgba(213, 158, 252, 1) 100%);
+    /* background: rgb(213, 158, 252); */
+    /* background: linear-gradient(90deg, rgba(213, 158, 252, 1) 0%, rgba(142, 157, 252, 1) 23%, rgba(135, 95, 253, 1) 50%, rgba(142, 157, 252, 1) 84%, rgba(213, 158, 252, 1) 100%); */
+    /* background: rgb(135, 95, 253); */
+    /* background: radial-gradient(circle, rgba(135, 95, 253, 1) 28%, rgba(142, 157, 252, 1) 59%, rgba(142, 157, 252, 1) 65%, rgba(213, 158, 252, 1) 100%); */
+    /* background: rgb(135, 95, 253); */
+    /* background: radial-gradient(circle, rgba(135, 95, 253, 1) 28%, rgba(142, 157, 252, 1) 69%, rgba(213, 158, 252, 1) 94%); */
+    /* background: rgb(143, 108, 252); */
+    /* background: radial-gradient(circle, rgba(143, 108, 252, 1) 28%, rgba(142, 157, 252, 1) 69%, rgba(213, 158, 252, 1) 94%); */
+    /* background: rgb(220, 176, 255); */
+    /* background: radial-gradient(circle, rgba(220, 176, 255, 1) 0%, rgba(143, 108, 252, 1) 34%, rgba(142, 157, 252, 1) 72%, rgba(213, 158, 252, 1) 94%); */
+    /* background: rgb(220, 176, 255); */
+    /* background: radial-gradient(circle, rgba(220, 176, 255, 1) 0%, rgba(143, 108, 252, 1) 42%, rgba(142, 157, 252, 1) 72%, rgba(213, 158, 252, 1) 94%); */
+    /* background-image: url('https://raw.githubusercontent.com/LunarTaku/discord-web/main/img/nav-bkg.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -252,7 +273,8 @@ p {
     text-shadow: 0 0 10px rgba(255, 208, 208, 0.56);
     transition: text-shadow 0.3s;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 5px;
     color: #1c171e;
     background-color: #1c171e;
