@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    cursor: default;
+    margin: 0px;
+    padding: 0px;
+    background: #1F1E2E;
+    /* background-image: url('https://media.discordapp.net/attachments/822546672378314753/1082822286261891172/spooky_spill.jpg?width=748&height=421'); */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+span {
+    color: white;
+}
+
+span2{
+    color: #575269;
+}
+
+h1 {
+    width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    color: #F28FAD;
+    font-weight: normal;
+}
+
+h3 {
+    width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    color: #D9E1EE;
+}
+h4 {
+    width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    color: #C9D0DD;
+}
+
+a {
+    color: rgb(255, 208, 208);
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 10px rgba(255, 208, 208, 0.56);
+    transition: text-shadow 0.3s;
+}
