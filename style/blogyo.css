@@ -2,9 +2,8 @@
 
 body {
     font-family: 'Fira Code';
-    /* background-color: #1c171e; */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/paisaje.png");
-
+    background-color: #1F1E2E;
+    /* background-image: url("../img/paisaje.png"); */
     height: 30%;
     background-position: center;
     background-repeat: no-repeat;
