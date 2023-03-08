@@ -1,272 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comandos</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp"/>
-    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IziBot Commands</title>
+
+    <link rel="stylesheet" href="css.css" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
 </head>
-<body>
-    <div id="progressbar"></div>
-    <section>
-    <div class="container">
-        <aside>
-            <div class="top">
-                <div class="logo">
-                    <img src="../images/logo.png">
-                    <h2><span class="primary">IZI</span><span class="success"> BOT</span></h2>
-                </div>
-                <div class="close" id="close-btn">
-                    <span class="material-symbols-sharp">close</span>
-                </div>
-            </div>
+<style>
+    #intro-example {
+    height: 400px;
+}
 
-            <div class="sidebar">
-                <a href="../pages/dashboard.html">
-                    <span class="material-symbols-sharp">grid_view</span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="../blogs/izibot.html">
-                    <span class="material-symbols-sharp">home</span>
-                    <h3>Inicio</h3>
-                </a>
-                <a href="../pages/comandos.html" class="active">
-                    <span class="material-symbols-sharp">receipt_long</span>
-                    <h3>Comandos</h3>
-                </a>
-                <a href="#">
-                    <span class="material-symbols-sharp">insights</span>
-                    <h3>Servidores</h3>
-                </a>
-                <!-- <a href="#">
-                    <span class="material-symbols-sharp">mail</span>
-                    <h3>Messages</h3>
-                    <span class="message-count">26</span>
-                </a> -->
-                <a href="../pages/tos.html">
-                    <span class="material-symbols-sharp">inventory</span>
-                    <h3>Terminos de servicio</h3>
-                </a>
-                <a href="#">
-                    <span class="material-symbols-sharp">report</span>
-                    <h3>Reportes</h3>
-                </a>
-                <!-- <a href="#">
-                    <span class="material-symbols-sharp">settings</span>
-                    <h3>Settings</h3>
-                </a> -->
-                <!-- <a href="#">
-                    <span class="material-symbols-sharp">add</span>
-                    <h3>Add Product</h3>
-                </a> -->
-                <a href="#">
-                    <span class="material-symbols-sharp">logout</span>
-                    <h3>Logout</h3>
-                </a>
-            </div>
-        </aside>
-        <main>
-            <h1>Inicio</h1>
-            <div class="insights">
-                <div class="sales">
-                    <span class="material-symbols-sharp">settings</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h3>Configuracion</h3>
-                            <h1>Configura tu servidor de forma facil</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="expenses">
-                    <span class="material-symbols-sharp">favorite</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h3>Interacción</h3>
-                            <h1>Diviertete con los demas usuarios</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="araara">
-                    <span class="material-symbols-sharp">star</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h3>Anime</h3>
-                            <h1>Usa los comandos de anime!</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="musica">
-                    <span class="material-symbols-sharp">headphones</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h3>Musica</h3>
-                            <h1>Escucha tus musicas favoritas</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="araara">
-                    <span class="material-symbols-sharp">lightbulb</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h3>Información</h3>
-                            <h1>Mantente informado</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="income">
-                    <span class="material-symbols-sharp">dns</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h3>Setups</h3>
-                            <h1>Configura los setups de forma facil</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="income">
-                    <span class="material-symbols-sharp">payments</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h3>Economia</h3>
-                            <h1>Juega con los demas usuarios apostando</h1>
-                        </div>
-                        <div class="progress">
-                            <!-- <svg>
-                                <circle cx="38" cy="38"
-                                r="38"></circle>
-                            </svg> -->
-                            <!-- <div class="number">
-                                <p>44%</p>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="sales">
-                    <span class="material-symbols-sharp">image</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h3>Imagenes</h3>
-                            <h1>Diviertete usando diversos comandos para modificar avatares</h1>
-                        </div>
-                        <div class="progress">
-                            <!-- <svg>
-                                <circle cx="38" cy="38"
-                                r="38"></circle>
-                            </svg> -->
-                            <!-- <div class="number">
-                                <p>44%</p>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="sales">
-                    <span class="material-symbols-sharp">mic</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h3>Sound board</h3>
-                            <h1>diviertete escuchando diferentes sonidos graciosos</h1>
-                            <div class="progress">
-                                <!-- <svg>
-                                    <circle cx="38" cy="38"
-                                    r="38"></circle>
-                                </svg> -->
-                                <!-- <div class="number">
-                                    <p>44%</p>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="expenses">
-                    <span class="material-symbols-sharp">warning</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h3>NSFW</h3>
-                            <h1>Mira los comandos de nsfw</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="income">
-                    <span class="material-symbols-sharp">stadia_controller</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h3>Fun</h3>
-                            <h1>Diviertete con los comandos de diversion</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="income">
-                    <span class="material-symbols-sharp">rocket_launch</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h3>Mini Games</h3>
-                            <h1>Juega con los demas usuarios</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="expenses">
-                    <span class="material-symbols-sharp">admin_panel_settings</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h3>Admin</h3>
-                            <h1>Configura y manten tu servidor seguro</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="income">
-                    <span class="material-symbols-sharp">person</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h3>Perfiles</h3>
-                            <h1>Configura y personaliza tu perfil</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="income">
-                    <span class="material-symbols-sharp">construction</span>
-                    <div class="middle">
-                        <div class="lef">
-                            <h3>Utilidades</h3>
-                            <h1>Usa diversos comandos de utilidad</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="center" style="color: var(--text-color);">IZI BOT © 2021</p>
-        </main>
+@media (min-width: 992px) {
+    #intro-example {
+        height: 600px;
+    }
+}
+</style>
 
-        <div class="right">
-            <div class="top">
-                <button id="menu-btn">
-                    <span class="material-symbols-sharp">menu</span>
-                </button>
-                <div class="theme-toggler">
-                    <span class="material-symbols-sharp">light_mode</span>
-                    <span class="material-symbols-sharp active">dark_mode</span>
-                </div>
-                <div class="profile">
-                    <div class="info">
-                        <p>Comandos de, <br>Izi Bot</br></p>
-                    </div>
+
+<body style="background-color: #292a2e">
+    <nav class="navbar navbar-expand-lg fixed-top text-white navbar-dark" style="background-color: #202024">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="../index.html"><i class="fas fa-home pe-2"></i>Home</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-primary btn-rounded"
+                            href="https://discord.com/api/oauth2/authorize?client_id=923455561113145375&permissions=8&scope=bot%20applications.commands">Invite
+                            Bot</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="rounded-5 shadow-5" style="
+        background-color: #202024;
+        align-self: center;
+        margin: 25px;
+        margin-bottom: 0px;
+        padding-bottom: 10px;
+      ">
+        <h1 class="text-center text-white p-3" style="margin-bottom: 0px;">Información de los comandos</h1>
+        <p class="text-center h5 text-white">
+            Prefix: <code>!i</code>
+            <br>
+            <code>{}</code> - Requerido
+            <br>
+            <code>[]</code> - Opcional
+        </p>
+    </div>
+
+    <div class="rounded-5 shadow-5" style="
+        background-color: #202024;
+        align-self: center;
+        margin: 25px;
+        margin-bottom: 0px;
+      ">
+        <h1 class="text-center text-white p-3">Comandos de configuración</h1>
+    </div>
+    <div class="accordion accordion-borderless shadow-5" id="accordionFlushExampleX"
+        style="margin-left: 25px; margin-right: 25px">
+        <div class="accordion-item" style="background-color: #202024">
+            <h2 class="accordion-header" id="flush-headingOneX">
+                <button class="accordion-button text-white" style="background-color: #202024" type="button"
+                    data-mdb-toggle="collapse" data-mdb-target="#flush-collapseOneX" aria-expanded="true"
+                    aria-controls="flush-collapseOneX">antimayus</button>
+            </h2>
+            <div id="flush-collapseOneX" class="accordion-collapse collapse text-white"
+                style="background-color: #202024" aria-labelledby="flush-headingOneX"
+                data-mdb-parent="#accordionFlushExampleX">
+                <div class="accordion-body">Activa un sistema de anti mayusculas en el servidor<br/>
+                    <br />
+                    Uso: <code>!iantimayus {on/off} [min] [options]</code>
+                    <br />
+                    Permisos: <span class="badge badge-success">Administrador</span>
                 </div>
             </div>
         </div>
     </div>
-    </section>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript">
-        $(window).scroll(function(){
-            var scroll = $(window).scrollTop(),
-            dh = $(document).height(),
-            wh = $(window).height();
-            scrollPercent = (scroll / (dh-wh)) * 100;
-            $('#progressbar').css('height', scrollPercent + '%');
-        })
-    </script>
-
-    <script src="../js/orders.js"></script>
-    <script src="../js/index.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- MDB JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
 </body>
+
 </html>
